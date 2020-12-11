@@ -18,24 +18,31 @@
         <li>First check to see if you have SSH keys</li>
         <ul>
             <li>In Terminal type: ls -al ~/.ssh</li>
+            <img src="assets/pics/Step 1a.png" alt="Terminal with ls -al ~/.ssh typed">
             <li>If you see a file called id_rsa.pub you're good!</li>
+            <img src="assets/pics/Step 1-1b.png" alt="Terminal showing file called id_rsa.pub">
         </ul>
 
         <li>Next copy your SSH key</li>
         <ul>
             <li>In Terminal type: pbcopy < ~/.ssh/id_rsa.pub</li>
             <li>This copys your SSH key</li>
+            <img src="assets/pics/Step 1-2a.png" alt="Terminal with pbcopy < ~/.ssh/id_rsa.pub typed">
         </ul>
 
         <li>Then log into your class Repo</li>
         <ul>
             <li> <a href="https://upenn.bootcampcontent.com/upenn-bootcamp/upenn-phi-fsf-pt-12-2020-u-c">https://upenn.bootcampcontent.com/upenn-bootcamp/upenn-phi-fsf-pt-12-2020-u-c</a></li>
+            <img src="assets/pics/Step 1-3a.png" alt="GitLab open with settings cirlced">
             <li>Go to settings, then SSH Keys</li>
+            <img src="assets/pics/Step 1-3b.png" alt="GitLab settings open with SSH Keys cirlced">
         </ul>
 
         <li>Add your SSH key to GitLab</li>
         <ul>
             <li>Paste your key into the SSH feild, give it a name then click Add Key</li>
+            <img src="assets/pics/Step 1-4a.png" alt="SSH Keys tab open in GitLab with instructions for where to paste Key and Name Key">
+            <img src="assets/pics/Step 1-4b.png" alt="SSH Keys tab open with Key pasted and name added and Add key button circled">
         </ul>
     </ol>
 
@@ -43,9 +50,11 @@
     <ol>
         <li>Go to your Class Repo and hit the blue Clone button</li>
         <li>Select SSH</li>
+        <img src="assets/pics/Step 2-1-2.png" alt="GitLab class repo open with the Clone button and copy button circled">
         <li>Go to your Terminal and type: git clone</li>
         <ul>
             <li>Paste in the SSH link you just copied and press the return button</li>
+            <img src="assets/pics/Step 2-3.png" alt="Terminal open with git clone typed and SSH link pasted">
         </ul>
     </ol>
 
