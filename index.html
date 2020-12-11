@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <link>
+    <meta charset="UTF-8"/>
+    <title>Cloning GitLab (Mac)</title>
+</head>
+
+<body>
+    <h1>How to clone the Repo from GitLab (Mac)</h1> 
+
+    <p>In the tutorial we will walk through the steps to clone the 
+        class repository from GitLab</p>
+
+    <h2>Step 1: Setting up your SSH key</h2>
+    <ol>
+        <li>First check to see if you have SSH keys</li>
+        <ul>
+            <li>In Terminal type: ls -al ~/.ssh</li>
+            <li>If you see a file called id_rsa.pub you're good!</li>
+        </ul>
+
+        <li>Next copy your SSH key</li>
+        <ul>
+            <li>In Terminal type: pbcopy < ~/.ssh/id_rsa.pub</li>
+            <li>This copys your SSH key</li>
+        </ul>
+
+        <li>Then log into your class Repo</li>
+        <ul>
+            <li> <a href="https://upenn.bootcampcontent.com/upenn-bootcamp/upenn-phi-fsf-pt-12-2020-u-c">https://upenn.bootcampcontent.com/upenn-bootcamp/upenn-phi-fsf-pt-12-2020-u-c</a></li>
+            <li>Go to settings, then SSH Keys</li>
+        </ul>
+
+        <li>Add your SSH key to GitLab</li>
+        <ul>
+            <li>Paste your key into the SSH feild, give it a name then click Add Key</li>
+        </ul>
+    </ol>
+
+    <h2>Step 2: Clone the Repo</h2>
+    <ol>
+        <li>Go to your Class Repo and hit the blue Clone button</li>
+        <li>Select SSH</li>
+        <li>Go to your Terminal and type: git clone</li>
+        <ul>
+            <li>Paste in the SSH link you just copied and press the return button</li>
+        </ul>
+    </ol>
+
+    
+</body>
+</html>
