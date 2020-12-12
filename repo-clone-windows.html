@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <h1>Adding SSH key to Gitlab</h1>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <ol>
+      <li>Check if SSH key set on your machine</li>
+      &nbsp;
+
+      <ul>
+        <li>Open Git-Bash type: ls –al ~/.ssh</li>
+        &nbsp;
+
+        <img
+          src="css/images/sshkeycheck.PNG"
+          alt="Git-Bash - check for ssh key"
+        />
+        &nbsp;
+        <li>If you see id_rsa and is_rsa.pub you have your ssh set</li>
+        &nbsp;
+      </ul>
+
+      <li>Copy your SSH key</li>
+      &nbsp;
+
+      <ul>
+        <li>In Git-Bash type: " clip < ~/.ssh/id_rsa.pub "</li>
+        &nbsp;
+        <img src="css/images/copysshkey.PNG" alt="Git-Bash -copy ssh key" />
+        &nbsp;
+        <li>
+          You shouldn’t see any kind of message when you run this command. If
+          you do, make sure you entered it correctly.
+        </li>
+        &nbsp;
+        <li>
+          Note: Do not copy anything else to your clipboard until all steps are
+          completed. Otherwise, you’ll need to enter the copy command again.
+        </li>
+        &nbsp;
+      </ul>
+
+      <li>
+        <ul>
+          <li>
+            Login into your Gitlab Account :
+            <a
+              href="https://upenn.bootcampcontent.com/upenn-bootcamp/upenn-phi-fsf-pt-12-2020-u-c"
+              >https://upenn.bootcampcontent.com/upenn-bootcamp/upenn-phi-fsf-pt-12-2020-u-c</a
+            >
+          </li>
+          &nbsp;
+          <li>Navigate to your profile icon and click on Setting</li>
+          &nbsp;
+
+          <img src="css/images/gitlabsetting.PNG" alt="gitlabsetting"  class="screenshots"/>
+          &nbsp;
+
+          <li>Paste ssh key and Add Title</li>
+          &nbsp;
+          <img src="css/images/addsshkey.png" alt="pastesshkey" class="screenshots"/>
+        </ul>
+      </li>
+
+<h1>Clone the Repo from Gitlab</h1>
+
+
+<ol>
+<li>In Gitlab go to project detail page</li> &nbsp;
+<img src="css/images/gitlabproject.PNG" alt="projectname" class="screenshots"> &nbsp;
+
+<li>Click on "clone" and copy "Clone with SSH" url</li>&nbsp;
+    <img src="css/images/projectdetail.PNG" alt="projectdetail" class="screenshots" >&nbsp;
+<li>In Git-Bash type : git clone (paste the url) </li> &nbsp;
+    
+<img src="css/images/clonedrepo.png" alt="clonedrepo" >
+ 
+
+
+
+
+</ol>
+    </ol>
+  </body>
+</html>
